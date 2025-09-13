@@ -11,7 +11,8 @@ defmodule GossipGlomers.CLI do
     "broadcast" => GossipGlomers.Challenges.Broadcast,
     "g-counter" => GossipGlomers.Challenges.GrowOnlyCounter,
     "kafka" => GossipGlomers.Challenges.Kafka,
-    "txn-rw-register" => GossipGlomers.Challenges.TransactionRegister
+    "txn-rw-register" => GossipGlomers.Challenges.TransactionRegister,
+    "txn-list-append" => GossipGlomers.Challenges.TransactionListAppend
   }
 
   def main(args) do

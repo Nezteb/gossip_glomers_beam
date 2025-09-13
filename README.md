@@ -4,7 +4,7 @@ Main page: https://fly.io/dist-sys/
 
 Maelstrom docs: https://github.com/jepsen-io/maelstrom
 
-## Elixir
+## Elixir (1.18)
 
 1. [X] Echo (`echo`)
     - https://fly.io/dist-sys/1/
@@ -77,9 +77,35 @@ Extras? Not listed on Fly.io Gossip Glomers, but exist within Maelstrom:
         ./maelstrom test -w lin-kv --bin EXECUTABLE --node-count 3 --concurrency 4n --rate 30 --time-limit 60 --nemesis partition --nemesis-interval 10 --test-count 10
         ```
 
-## Gleam
+## Gleam (1.12.0)
 
-TBD!
+- https://tour.gleam.run/everything/
+- https://gleam.run/command-line-reference/
+- https://gleam.run/writing-gleam/gleam-toml/
+- https://gleam.run/cheatsheets/gleam-for-elixir-users/
+- https://hexdocs.pm/gleam_stdlib/
+- https://hexdocs.pm/gleam_otp/
+
+1. [ ] Echo (`echo`)
+    - https://fly.io/dist-sys/1/
+2. [ ] Unique ID Generation (`unique-ids`)
+    - https://fly.io/dist-sys/2/
+3. [ ] Broadcast (`broadcast`)
+    - https://fly.io/dist-sys/3a/
+    - https://fly.io/dist-sys/3b/
+    - https://fly.io/dist-sys/3c/
+    - https://fly.io/dist-sys/3d/
+    - https://fly.io/dist-sys/3e/
+4. [ ] Grow-Only Counter (`g-counter`)
+    - https://fly.io/dist-sys/4/
+5. [ ] Kafka-Style Log (`kafka`)
+    - https://fly.io/dist-sys/5a/
+    - https://fly.io/dist-sys/5b/
+    - https://fly.io/dist-sys/5c/
+6. [ ] Totally-Available... (`txn-rw-register`)
+    - https://fly.io/dist-sys/6a/
+    - https://fly.io/dist-sys/6b/
+    - https://fly.io/dist-sys/6c/
 
 ## Miscellaneous Links
 

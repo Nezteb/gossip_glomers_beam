@@ -1,0 +1,24 @@
+# just command runner
+# Docs: https://just.systems/man/en/
+
+all: clean build lint
+
+clean:
+    rm -rf ./store
+    rm -f ./*.log
+
+build: deps compile format
+
+deps:
+    gleam deps download
+
+compile:
+    gleam build
+    gleam run -m gleescript
+
+format:
+    gleam format
+
+lint:
+    gleam fix
+    gleam check
