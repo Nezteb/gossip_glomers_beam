@@ -1,0 +1,15 @@
+*.log*
+
+# escript
+gossip_glomers
+
+# I tried building this locally initially: https://github.com/jepsen-io/maelstrom/blob/main/package.sh
+# But I kept running into issues, so now it's just the lateset GH release:
+maelstrom
+maelstrom.jar
+store
+
+*.beam
+*.ez
+/build
+erl_crash.dump
