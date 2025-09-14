@@ -1,7 +1,7 @@
 # just command runner
 # Docs: https://just.systems/man/en/
 
-all: clean build lint
+all: clean lint build
 
 clean:
     rm -rf ./store
@@ -20,5 +20,5 @@ format:
     gleam format
 
 lint:
-    gleam fix
     gleam check
+    gleam fix
